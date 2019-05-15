@@ -6,13 +6,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   devtool: 'eval-cheap-module-source-map',
   entry: {
-    index: './src/assets/scripts/index.js',
-    o_nama: './src/assets/scripts/index.js',
-    saveti: './src/assets/scripts/index.js',
-    ture: './src/assets/scripts/index.js',
-    mapa: './src/assets/scripts/index.js',
-    zanimljivosti: './src/assets/scripts/index.js',
-    krusevac_ture: './src/assets/scripts/index.js'
+    index: './src/assets/scripts/index.js'
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist')
@@ -90,42 +84,6 @@ module.exports = {
       inject: true,
       chunks: ['index'],
       filename: 'index.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/assets/pages/o_nama.html',
-      inject: true,
-      chunks: ['o_nama'],
-      filename: 'o_nama.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/assets/pages/saveti.html',
-      inject: true,
-      chunks: ['saveti'],
-      filename: 'saveti.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/assets/pages/ture.html',
-      inject: true,
-      chunks: ['ture'],
-      filename: 'ture.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/assets/pages/ture/krusevac_ture.html',
-      inject: true,
-      chunks: ['krusevac_ture'],
-      filename: 'krusevac_ture.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/assets/pages/mapa.html',
-      inject: true,
-      chunks: ['mapa'],
-      filename: 'mapa.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/assets/pages/zanimljivosti.html',
-      inject: true,
-      chunks: ['zanimljivosti'],
-      filename: 'zanimljivosti.html'
     }),
     new webpack.ProvidePlugin({
       $: 'jquery',
