@@ -1,14 +1,7 @@
 import 'bootstrap';
-import toggleShrink from './nav';
-// import carousel from './carousel';
-import { initMap } from './mapa';
-
 import '../styles/index.scss';
+import { plata } from './functions';
 
-require('webpack-icons-installer');
-
-window.onscroll = function() {
-  toggleShrink();
+window.plata = function() {
+  plata();
 };
-
-window.initMap = initMap();
