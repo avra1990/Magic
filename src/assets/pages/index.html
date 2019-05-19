@@ -7,24 +7,22 @@
     <title>Magic</title>
   </head>
   <body>
-   <table>
-     <thead>
-        <th>Ime</th>
-        <th>Prezime</th>
-        <th>Adresa</th>
-        <th>Neto iznos</th>
-        <th>Bruto iznos</th>
-     </thead>
-     <tbody>
-       <td><input placeholder="ime" type='text' id='p1ID'/></td>
-       <td><input placeholder="prezime" type='text' id='p2ID'/></td>
-       <td><input placeholder="adresa" type='text' id='p3ID'/></td>
-       <td><input placeholder="neto" type="number" min="1" id='p4ID'/></td> <button id="=" onclick="plata()">=</button>
-       <td><input placeholder="bruto" type='text' id='p5ID'/></td>
-     </tbody>
-     </table>
-   </table>
+       <td><input placeholder="Ime" type='text' id='ime'/></td>
+       <td><input placeholder="Prezime" type='text' id='prezime'/></td>
+       <td><input placeholder="Adresa" type='text' id='adresa'/></td>
+       <td><input placeholder="Neto" type="number" min="1" id='neto'/></td> <button id="Izracunaj" onclick="plata()">Izracunaj</button>
+       <td><input placeholder="Bruto" type='text' id='bruto'/></td> <br />
+       <button id = 'dodajID' onclick = dodajRed()>Dodaj u tabelu</button>
+
+       <table id='table'>
+        <tr>
+          <th>Ime</th>
+          <th>Prezime</th>
+          <th>Adresa</th>
+          <th>Neto</th>
+          <th>Bruto</th>
+        </tr>
+       </table>
   </body>
-  <p id = 'obracunID'></p>
   </body>
 </html>
