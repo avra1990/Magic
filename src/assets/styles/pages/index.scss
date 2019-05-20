@@ -1,0 +1,21 @@
+.table {
+  :nth-child() {
+    background-color: aqua;
+  }
+}
+
+button:hover {
+  background-color: rgb(28, 0, 128);
+  cursor: pointer;
+}
+
+button:hover:before {
+  opacity: 6;
+  transition: 5s;
+}
+
+button:hover::after {
+  background-color: red;
+  opacity: 1;
+  transition: 5s;
+}
