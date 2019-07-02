@@ -1,7 +1,31 @@
 export default function plata() {
-  const neto = parseFloat(document.getElementById('neto').value);
-  const bruto = parseFloat((document.getElementById('bruto').value = neto * (137 / 100)));
-}
+  let neto = parseFloat(document.getElementById('neto').value);
+  let bruto = parseFloat((document.getElementById('bruto').value = neto * (137 / 100)));
+};
+
+export default function dodajRed() {
+
+  var ime = document.getElementById('ime').value;
+  var prezime = document.getElementById('prezime').value;
+  var adresa = document.getElementById('adresa').value;
+  var neto = document.getElementById('neto').value;
+  var bruto = document.getElementById('bruto').value;
+
+  var tabela = document.getElementsByTagName("tabela")[0];
+  var noviRed = tabela.insertRow(1);
+
+  var kol_1 = noviRed.insertCell(0);
+  var kol_2 = noviRed.insertCell(1);
+  var kol_3 = noviRed.insertCell(2);
+  var kol_4 = noviRed.insertCell(3);
+  var kol_5 = noviRed.insertCell(4);
+
+  kol_1.innerHTML = ime;
+  kol_2.innerHTML = prezime;
+  kol_3.innerHTML = adresa;
+  kol_4.innerHTML = neto;
+  kol_5.innerHTML = bruto;
+};
 /*
 export default function dodajRed() {
   let ime     = document.getElementById('ime').value;
@@ -82,4 +106,4 @@ function dodajRed() {
 }
 */
 
-export { plata };
+export { plata, dodajRed };
