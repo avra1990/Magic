@@ -3,27 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link />
     <title>Magic</title>
   </head>
   <body>
-    
-        <td> Ime: <input  type='text' id='ime'/></td>
-        <td> Prezime: <input type='text' id='prezime'/></td>
-        <td> Adresa: <input  type='text' id='adresa'/></td>
-        <td> Neto plata: <input  type="number" min="1" id='neto'/></td> 
-        <td> Bruto plata: <input type='number' id='bruto'/></td><button id="Izracunaj" onclick="plata()">Izracunaj</button> <br />
-        <td><button id = 'dodajID' onclick = "dodajRed()">Dodaj u tabelu</button></td>
-    
-       <table border="1" id='tabela'>
-        <tr>
-          <th>Ime</th>
-          <th>Prezime</th>
-          <th>Adresa</th>
-          <th>Neto</th>
-          <th>Bruto</th>
-        </tr>
-       </table>
-  </body>
+    <div id="container">
+      <div class="input">Ime: <input type="text" id="ime" /></div>
+      <div class="input">Prezime: <input type="text" id="prezime" /></div>
+      <div class="input">Adresa: <input type="text" id="adresa" /></div>
+      <div class="input">Neto plata: <input type="number" min="1" id="neto" /></div>
+      <div class="input">Bruto plata: <input type="number" id="bruto" /></div>
+      <button id="Izracunaj" onclick="plata()">Izracunaj</button> <br />
+      <button id="dodajID" onclick="dodajRed()">Dodaj u tabelu</button>
+    </div>
+
+    <table border="1" id="tabela">
+      <tr>
+        <th>Ime</th>
+        <th>Prezime</th>
+        <th>Adresa</th>
+        <th>Neto</th>
+        <th>Bruto</th>
+      </tr>
+    </table>
   </body>
 </html>
