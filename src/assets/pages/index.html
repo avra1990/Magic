@@ -7,23 +7,21 @@
     <title>Magic</title>
   </head>
   <body>
-    <div id="container">
-      <div class="input">Ime: <input type="text" id="ime" /></div>
-      <div class="input">Prezime: <input type="text" id="prezime" /></div>
-      <div class="input">Adresa: <input type="text" id="adresa" /></div>
-      <div class="input">Neto plata: <input type="number" min="1" id="neto" /></div>
-      <div class="input">Bruto plata: <input type="number" id="bruto" /></div>
-      <button id="Izracunaj" onclick="plata()">Izracunaj</button> <br />
-      <button id="dodajID" onclick="dodajRed()">Dodaj u tabelu</button>
-    </div>
+    Ime: <input type="text" id="ime" /> Prezime: <input type="text" id="prezime" /> Adresa:
+    <input type="text" id="adresa" /> Neto plata: <input type="number" min="1" id="neto" /> Bruto
+    plata: <input type="number" id="bruto" />
+    <button id="dodajID" onclick="dodajRed()">Dodaj u tabelu</button>
 
     <table border="1" id="tabela">
+      <br />
       <tr>
         <th>Ime</th>
         <th>Prezime</th>
         <th>Adresa</th>
         <th>Neto</th>
         <th>Bruto</th>
+        <th><button id="izmeni">Izmeni</button></th>
+        <th><button id="izbrisi">Izbrisi</button></th>
       </tr>
     </table>
   </body>
